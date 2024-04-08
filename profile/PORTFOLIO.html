@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!-- To display an HTML page correctly, a web browser must know which character set to use. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones): -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+
+</head>
+<body>
+
+        <div class="hero" >
+		<nav>
+		<img src="Namelogo.JPG" class="logo">
+                <ul id="sidemenu">
+				    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#about">PORTFOLIO</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#contact">HIRE ME</a></li>
+					<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+				<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        <div class="details">
+		    <h1>I,m Sunil <span>Dabbi</span></h1>
+			<p>This is my official portfolio website to shows all
+			<br>Details and work experience web development .
+			</p>
+			<a href="sunilresume.pdf" download>DOWNLOAD CV</a>
+			
+			<div class="social-media-icons">
+			<a href="https://www.linkedin.com/in/sunil-dabbi-517869258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtTEWYPvdSXWJmKwIExZ3nw%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="https://www.instagram.com/sunil_dabbi7/" ><i class="fa-brands fa-instagram"></i></a>
+		
+			</div>
+            </div>
+			<div class="images">
+			<img src="yellowbg.PNG" class="shape">
+			<img src="suni.jpeg" class="boy">
+        </div>
+		<!--About width="500" height="600" style="font-size: 16px;  pic.jpg background2.jpg"-->
+		<div id="about">
+		   <div class="container">
+		      <div class="row">
+		   		   <div class="about-col-1">
+				        <img src="HalfPhoto.png" >
+				    </div>
+				    <div class="about-col-2">
+				       <h1 class="sub-title">About Me</h1>
+					   <p>"Creative problem-solver with strong communication skills,adept at fostering collaboration and leading teams.  Committed to continuous growth and excellence, I bring integrity andenthusiasm to every endeavor. Beyond technical proficiency, I prioritizeadaptability and innovation. Outside of work, I enjoy exploring diverse interests and connecting with others."</p>
+					   <div class="tab-titles">
+					   <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					   <p class="tab-links" onclick="opentab('experience')">Experience</p>
+					   <p class="tab-links" onclick="opentab('education')">Education</p>
+					   </div>
+					   <div class="tab-contents active-tab" id="skills" >
+						    <ul>
+								<li><span>WEB DEVELOPMENT</span><br>Desigining Front End applications</li>
+								<li><span>JAVA Developer</span><br>Full stack java development</li>
+								<li><span>Python Developer</span><br>Full stack python development</li>
+							</ul>
+					   </div>
+					   <div class="tab-contents" id="experience">
+						    <ul>
+								<li><span>Front End Developer</span><br>Desigining Front End applications</li>
+								<li><span>Java Developer</span><br>JAVA BACKEND DEVELOPER</li>
+								<li><span>Python Developer</span><br>Full stack python development</li>
+							</ul>
+					   </div><div class="tab-contents" id="education">
+						    <ul>
+								<li><span>2024 - current</span><br>Bachelore Of Technology</li>
+								<li><span>2019 - 2021</span><br>Intermediate / class 11 & 12</li>
+								<li><span>2019</span><br>SSC/clas - 10</li>
+							</ul>
+					   </div>
+			        </div>
+			    </div>
+		    </div>
+		</div>
+		<!--  ------services--------  -->
+	<div id="services">
+		<div class="container">
+		   <h1 class="sub-title">MY SERVICES</h1>
+			<div class="services-list">
+              <div >
+			        <i class="fa-solid fa-code"></i>
+					<h2>web Design</h2>
+					<p>Developing your interactive,efficient and effective web pages that look great and work well on any device</p>
+					<a href="#">learn more</a>
+				</div>
+				<div>
+			        <i class="fa-brands fa-java"></i>
+					<h2>Java Developer</h2>
+					<p>you'll find my expertise as a Java developer showcased through innovative and robust solutions. With a deep understanding of Java programming language and its ecosystem.</p>
+					<a href="#">learn more</a>
+				</div>
+				<div>
+				    <i class="fa-sharp fa-solid fa-crop"></i>
+					<h2>UI/UX Design</h2>
+					<p>UI/UX designs crafted to enhance user satisfaction and engagement</p>
+					<a href="#">learn more</a>
+				</div>
+			</div> 
+        </div>
+	</div>
+			<!--   ----------contact---------------       -->	
+			<div id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="contact-left">
+							<div class="sub-title">Contact Me</div>
+							<p><i class="fa-solid fa-paper-plane"></i>sunildabbi03@gmail.com</p>
+							<p><i class="fa-solid fa-square-phone"></i>9347355840</p>
+						</div>
+						<div class="contact-right">
+							<form name="submit-to-google-sheet">
+								<input type="text" name="Name" placeholder="Your Name" required>
+								<input type="email" name="Email" placeholder="Your E-mail" required>
+								<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+								<button type="submit" class="btn btn2" onclick="msg sent">Submit</button>
+							</form>
+							<span id="msg"></span>
+						</div>
+					</div> 
+					
+				</div>
+				<div class="copyright">
+					<p>&copy;  2024 SunilWebsite  <i class="fa-solid fa-heart"></i>  All rights reserved.</p>
+				</div>
+			</div>  
+			
+<script>
+	var  tablinks = document.getElementsByClassName("tab-links");
+	var  tabcontents = document.getElementsByClassName("tab-contents");
+	function opentab(tabname){
+		for(tablink  of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-links");
+		document.getElementById(tabname).classList.add("active-tab");
+		
+	}
+
+</script>
+<script>
+	var sidemeu = document.getElementById("sidemenu");
+	function openmenu(){
+		sidemeu.style.right = "0";
+	}
+	function closemenu(){
+		sidemeu.style.right = "-200px";
+	}
+</script>
+    
+	<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbywjNL0pqCOEMBUzoyXIuYH2HownyJAJ46PRTRETFPXcV-fuzHtMyIsthKISdZ1msqvCA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => { 
+		msg.innerHTML = "Message sent successfully"
+		setTimeout(function(){
+			msg.innerHTML = ""
+		},5000)
+		form.reset()
+	  })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
